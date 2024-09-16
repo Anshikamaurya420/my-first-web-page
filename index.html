@@ -16,11 +16,11 @@
         <div class="home  rounded bg-grey m1 ">
             <div class="logo "><img class="invert" src="logo.svg" alt="logo"></div>
             <ul>
-                <li style="font-size: 23px;" onclick="homeclick()"><img class="invert" src="home.svg" alt="home">home</li>
+                <li  style="font-size: 23px;" onclick="homeclick()"><img class="invert" src="home.svg" alt="home">home</li>
                 <li style="font-size: 23px;" onclick="searchclick()"><img  class="invert"src="search.svg" alt="search">search</li>
             </ul>
         </div>
-        <div class="library rounded m1  bg-grey "><img class="invert"src="library.svg" alt="library" ><h3>Your Library</h3>
+        <div  class="library rounded m1  bg-grey "><img  onclick="libraryclick()" class="invert"src="library.svg" alt="library" ><h3  onclick="libraryclick()" >Your Library</h3>
         <div class="songlist"><img class="invert"src="https://cdn-icons-png.flaticon.com/512/2995/2995038.png
             " alt="music" >
         animal song son lo jara
@@ -61,9 +61,73 @@
     
     
     </div>
+    <!--for library -->
+    <div class="right border" id="librarydiv" style="display: none; background-color: #141515;  padding-left: 312px; width: 70vw;"><div style="font-size: 29px;  width:75vw; height: 28vh; background-color: rgb(25, 27, 27); padding-top: 0px; margin-bottom: 0px; position: fixed; border: 21px; "> <br> <button style="background-color: rgb(97, 97, 225); border-radius: 90px; font-size: 31px; width: 4vw; height: 7vh; "> A  </button> YOUR LIBRARY : <br> <br> <button id="colorbox" onclick="changecolor()" style="padding:4px; font-size: medium;" class="btn"> Playlist </button> <button id="colorbox" onclick="changecolor()" style="padding:4px; font-size: medium;" class="btn"> Podcasts </button> <button id="colorbox" onclick="changecolor()" style="padding:4px; font-size: medium;" class="btn"> Artists </button>  </div>  
+       <div style=" background-color: rgb(71, 74, 74);  height: 100vh; margin-left: 12px;width: 74vw; margin-top: 191px; border-radius: 16px; padding-top: 52px; display: flex; ">
+         <!--<div class="librarycard" style="width: 231px; height:135px; background-color: aqua;">
+
+         </div> -->
+         
+         
+         
+          <div class="song"> <img class="imga" src="https://i.scdn.co/image/ab67656300005f1fe46079c9a5b7c544c6922ac9
+          " alt="song1" onclick="main()" ondblclick="stop()">
+          <div class="card">
+             <h3>animal hits song</h3>
+             Lorem ipsum dolor sit  my nameyb  uyfu hycc .
+         
+         
+          </div>
+        </div>
+        <!-- start-->
+        <div class="song"><div class="play invert "><img src="https://cdn-icons-png.flaticon.com/128/483/483054.png" alt="play"> </div> <img class="imga" src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9
+ " alt="song1" onclick="main1()" ondblclick="stop1()">
+ 
+ <div class="card">
+    <h3>animal hits song</h3>
+    Lorem ipsum dolor sit  my nameyb  uyfu hycc .
+
+
+ </div>
+ </div>
+     <div class="song"> <img class="imga" src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0
+     " alt="song1" onclick="main2()" ondblclick="stop2()">
+     <div class="card">
+        <h3>animal hits song</h3>
+        Lorem ipsum dolor sit  my nameyb  uyfu hycc .
+    
+    
+     </div>
+     
+</div>
+    <div class="song"> <img class="imga" src="https://i.scdn.co/image/ab67706f0000000275da071e376f9e6bf9c05713
+
+    " alt="song1" onclick="main()" ondblclick="stop()">
+    <div class="card">
+       <h3>animal hits song</h3>
+       Lorem ipsum dolor sit  my nameyb  uyfu hycc .
+   
+   
+    </div>
+    </div>
+    
+        <div class="song"> <img class="imga" src="	https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f
+        " alt="song1" onclick="main3()" ondblclick="stop3()">
+        <div class="card">
+           <h3>animal hits song</h3>
+           Lorem ipsum dolor sit  my nameyb  uyfu hycc .
+       
+       
+        </div>
+        
+   </div>
+       </div>   
+
+      
+    </div>
     <!--for search tag use-->
     
-    <div class="right border"  id="searchdiv" style="display: none; background-color: rgb(52, 52, 61); padding-left: 332px;"> <div style="font-size:  29px; position: fixed;"> search: <input type="search" name="search" style=" width: 756px; height:6vh; position:fixed; background-color: rgb(216, 231, 231); font-size: 20px;" placeholder="What do you want to listen to ?"></div><br><br>
+    <div class="right border"  id="searchdiv" style="display: none; background-color: rgb(52, 52, 61); padding-left: 332px; "> <div style="font-size:29px; position: fixed;"> search: <input type="search" name="search" style=" width: 756px; height:6vh; position:fixed; background-color: rgb(216, 231, 231); font-size: 20px;" placeholder="What do you want to listen to ?"></div><br><br>
   <p style="font-size: 25px;"> Browse All:</p>
  <!-- <div class="song"><div class="play invert "><img src="https://cdn-icons-png.flaticon.com/128/483/483054.png" alt="play"> </div> <img class="imga"  src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa
  " alt="song1"></div> -->
@@ -140,7 +204,7 @@
     <div class="right  border " id="homediv" style="padding-left: 322px;">
         
             <div class="arrow ">
-           <div class="top"> <button style="padding:4px; font-size: medium;" class="btn"> ALL</button><button style="padding:4px; font-size: medium;" class="btn">MUSIC</button><button style="padding:4px; font-size: medium;" class="btn">PODCASTS</button> <button style="padding:4px; font-size: medium;" class="btn"> PLAYLIST</button></div>    
+           <div class="top"> <button id="colorbox" onclick="changecolor()" style="padding:4px; font-size: medium;" class="btn"> ALL </button><button id="colorbox" onclick="changecolor()"  style="padding:4px; font-size: medium;" class="btn">MUSIC</button><button id="colorbox" onclick="changecolor()"  style="padding:4px; font-size: medium;" class="btn">PODCASTS</button> <button style="padding:4px; font-size: medium;" class="btn"> PLAYLIST</button></div>    
            <div>
             <span><button onclick="window.location.href='singin.html';" class="btn">SING IN </button> </span>
             <span><button onclick="window.location.href='login.html';" class="btn">LOG IN</button></span>

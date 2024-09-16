@@ -55,14 +55,32 @@ function searchclick(){
     document.getElementById('homediv')
     .style.display='none';
     document.getElementById('searchdiv')
-    .style.display='block'
+    .style.display='block';
+    document.getElementById('librarydiv')
+    .style.display='none';
 
 }
 function homeclick(){
     document.getElementById('homediv')
     .style.display='block';
     document.getElementById('searchdiv')
-    .style.display='none'}
+    .style.display='none';
+    document.getElementById('librarydiv')
+    .style.display='none';
+    
+
+}
+ 
+function libraryclick(){
+        document.getElementById('librarydiv')
+        .style.display='block';
+        document.getElementById('searchdiv')
+        .style.display='none';
+        document.getElementById('homediv')
+        .style.display='none';
+    
+    }
+           
 function secondsToMinutesSeconds(second){
     if (isNaN(second) || second<0){return "00:00";}
     const minutes=Math.floor(seconds / 60);
@@ -137,7 +155,12 @@ document.querySelector(".volume>img").addEventListener("click", e=>{
     }
 
 })
-
+function changecolor(){
+   var a= document.getElementById("colorbox");
+   a.style.backgroundColor='lightgreen'
+    
+    
+}
 
 
 

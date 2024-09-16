@@ -93,8 +93,8 @@ right: 19px;}
 }
 .btn:hover{
     font-size: 13px;
-    color: white;
-    background-color: black;
+    color: rgb(36, 33, 33);
+    background-color: rgb(36, 245, 57);
     font-weight:100 ;
     
 
@@ -158,8 +158,6 @@ left: 0%;
 transition: left 0.5s ;
 }
                           
-
-
-
+.colorbox{background-color: rgb(9, 242, 21);}
 
 
